@@ -40,7 +40,11 @@ final class DrugsInfoViewController: UIViewController {
         super.viewDidLoad()
         view.backgroundColor = .white
         navigationController?.navigationBar.backgroundColor = .green
-        
+        let appearance = UINavigationBarAppearance()
+        appearance.backgroundColor = .green
+        navigationController?.navigationBar.standardAppearance = appearance
+        navigationController?.navigationBar.compactAppearance = appearance
+        navigationController?.navigationBar.scrollEdgeAppearance = appearance
         setupUI()
         
     }

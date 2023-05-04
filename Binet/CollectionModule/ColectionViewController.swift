@@ -15,6 +15,11 @@ protocol CollectionViewable: AnyObject {
 final class CollectionViewController: UIViewController {
     
     var presenter: CollectionPresentation?
+    private let myRefreshontrol: UIRefreshControl = {
+        let refresh = UIRefreshControl()
+        refresh.addTarget(self, action: #selector(refreshData(sender:)), for: .valueChanged)
+        return refresh
+    }()
     
     private var drugsList: [Drug] = [] {
             didSet {
@@ -37,6 +42,12 @@ final class CollectionViewController: UIViewController {
 
 
 private extension CollectionViewController {
+    
+    @objc private func refreshData(sender: UIRefreshControl) {
+        drugsList = []
+        fetchDrugs()
+        sender.endRefreshing()
+    }
     
     private func fetchDrugs() {
         getDrugs(offset: 0)
@@ -68,12 +79,34 @@ private extension CollectionViewController {
     
     @objc
     private func seachButtonTapped() {
+        let alert = UIAlertController(title: "Поиск", message: "Введите строку", preferredStyle: .alert)
+        let cancelAction = UIAlertAction(title: "Отмена", style: .cancel)
+        let okAction = UIAlertAction(title: "Найти", style: .default){ [weak self] (action) in
+            let searchStr = alert.textFields?.first?.text
+            self?.presenter?.getDrugsBySearh(string: searchStr ?? "", completion: { [weak self] result in
+                switch result {
+                case .success(let drugs):
+                    DispatchQueue.main.async{
+                        self?.drugsList = drugs
+                    }
+                case .failure(let failure):
+                    print("oshibka")
+                }
+            })
+        }
+        alert.addAction(cancelAction)
+        alert.addAction(okAction)
+        alert.addTextField { loginTF in
+            loginTF.placeholder = "Введите почту"
+        }
         
+        present(alert, animated: true)
     }
     
     private func setupCollectionView() {
         collectionView = UICollectionView(frame: .zero, collectionViewLayout: setupFlowLayout())
         view.addSubview(collectionView)
+        collectionView.refreshControl = myRefreshontrol
         collectionView.backgroundColor = UIColor(red: (229.0/255), green: (229.0/255), blue: (229.0/255), alpha: 1.0)
         collectionView.translatesAutoresizingMaskIntoConstraints = false
         collectionView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor).isActive = true

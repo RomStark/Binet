@@ -11,7 +11,7 @@ import Foundation
 //Протокол передачи UI эвентов слою презентации
 protocol CollectionPresentation {
     func getDrugs(offset: Int, completion: @escaping (Result<Drugs, Error>) -> Void)
-   
+    func getDrugsBySearh(string: String, completion: @escaping (Result<Drugs, Error>) -> Void)
 }
 
 protocol CollectionPresentationMenagement: AnyObject {
@@ -35,10 +35,19 @@ final class CollectionPresenter {
 // MARK: CollectionPresentation
 extension CollectionPresenter: CollectionPresentation {
     
-    
+    func getDrugsBySearh(string: String, completion: @escaping (Result<Drugs, Error>) -> Void) {
+        interactor.getDrugsBySearh(string: string){ result in
+            switch result {
+            case .success(let drugs):
+                completion(.success(drugs))
+            case .failure(let error):
+                completion(.failure(error))
+            }
+        }
+    }
     
     func getDrugs(offset: Int, completion: @escaping (Result<Drugs, Error>) -> Void) {
-        print("presenter enter")
+        
         interactor.getDrugs(offset: offset) { result in
             switch result {
             case .success(let drugs):
