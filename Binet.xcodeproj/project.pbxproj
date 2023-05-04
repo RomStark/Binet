@@ -8,18 +8,37 @@
 
 /* Begin PBXBuildFile section */
 		00C5A86B29FDA89100907A91 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C5A86A29FDA89100907A91 /* AppDelegate.swift */; };
-		00C5A86F29FDA89100907A91 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C5A86E29FDA89100907A91 /* ViewController.swift */; };
+		00C5A86F29FDA89100907A91 /* ColectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C5A86E29FDA89100907A91 /* ColectionViewController.swift */; };
 		00C5A87429FDA89200907A91 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00C5A87329FDA89200907A91 /* Assets.xcassets */; };
 		00C5A87729FDA89200907A91 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00C5A87529FDA89200907A91 /* LaunchScreen.storyboard */; };
+		00C5A88029FDAEEB00907A91 /* CollectionPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C5A87F29FDAEEB00907A91 /* CollectionPresenter.swift */; };
+		00C5A88229FDAEFA00907A91 /* CollectionInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C5A88129FDAEFA00907A91 /* CollectionInteractor.swift */; };
+		00C5A88429FDAF0900907A91 /* CollectionRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C5A88329FDAF0900907A91 /* CollectionRouter.swift */; };
+		00C5A88829FDAF2200907A91 /* CollectionAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C5A88729FDAF2200907A91 /* CollectionAssembly.swift */; };
+		00C5A88C29FDAF3700907A91 /* Assemblying.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C5A88B29FDAF3700907A91 /* Assemblying.swift */; };
+		00C5A88E29FDDD9900907A91 /* DrugCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C5A88D29FDDD9900907A91 /* DrugCollectionViewCell.swift */; };
+		00C5A8902A00992700907A91 /* DrugEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C5A88F2A00992700907A91 /* DrugEntity.swift */; };
+		00C5A8922A0176B400907A91 /* CollectionWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C5A8912A0176B400907A91 /* CollectionWorker.swift */; };
+		00C5A8982A01CD8800907A91 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 00C5A8972A01CD8800907A91 /* Kingfisher */; };
+		00C5A89B2A032C9700907A91 /* DrugsInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C5A89A2A032C9700907A91 /* DrugsInfoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		00C5A86729FDA89100907A91 /* Binet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Binet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		00C5A86A29FDA89100907A91 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		00C5A86E29FDA89100907A91 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		00C5A86E29FDA89100907A91 /* ColectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColectionViewController.swift; sourceTree = "<group>"; };
 		00C5A87329FDA89200907A91 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		00C5A87629FDA89200907A91 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		00C5A87829FDA89200907A91 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		00C5A87F29FDAEEB00907A91 /* CollectionPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionPresenter.swift; sourceTree = "<group>"; };
+		00C5A88129FDAEFA00907A91 /* CollectionInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionInteractor.swift; sourceTree = "<group>"; };
+		00C5A88329FDAF0900907A91 /* CollectionRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionRouter.swift; sourceTree = "<group>"; };
+		00C5A88729FDAF2200907A91 /* CollectionAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionAssembly.swift; sourceTree = "<group>"; };
+		00C5A88B29FDAF3700907A91 /* Assemblying.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assemblying.swift; sourceTree = "<group>"; };
+		00C5A88D29FDDD9900907A91 /* DrugCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrugCollectionViewCell.swift; sourceTree = "<group>"; };
+		00C5A88F2A00992700907A91 /* DrugEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrugEntity.swift; sourceTree = "<group>"; };
+		00C5A8912A0176B400907A91 /* CollectionWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionWorker.swift; sourceTree = "<group>"; };
+		00C5A89A2A032C9700907A91 /* DrugsInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrugsInfoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,6 +46,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				00C5A8982A01CD8800907A91 /* Kingfisher in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -52,13 +72,78 @@
 		00C5A86929FDA89100907A91 /* Binet */ = {
 			isa = PBXGroup;
 			children = (
+				00C5A88929FDAF2500907A91 /* Common */,
+				00C5A8992A032C6A00907A91 /* DrugsInfo */,
+				00C5A87E29FDAEBE00907A91 /* CollectionModule */,
 				00C5A86A29FDA89100907A91 /* AppDelegate.swift */,
-				00C5A86E29FDA89100907A91 /* ViewController.swift */,
 				00C5A87329FDA89200907A91 /* Assets.xcassets */,
 				00C5A87529FDA89200907A91 /* LaunchScreen.storyboard */,
 				00C5A87829FDA89200907A91 /* Info.plist */,
+				00C5A88F2A00992700907A91 /* DrugEntity.swift */,
 			);
 			path = Binet;
+			sourceTree = "<group>";
+		};
+		00C5A87E29FDAEBE00907A91 /* CollectionModule */ = {
+			isa = PBXGroup;
+			children = (
+				00C5A8952A0181EA00907A91 /* Cells */,
+				00C5A8932A0181D100907A91 /* Workes */,
+				00C5A86E29FDA89100907A91 /* ColectionViewController.swift */,
+				00C5A87F29FDAEEB00907A91 /* CollectionPresenter.swift */,
+				00C5A88129FDAEFA00907A91 /* CollectionInteractor.swift */,
+				00C5A88329FDAF0900907A91 /* CollectionRouter.swift */,
+				00C5A88729FDAF2200907A91 /* CollectionAssembly.swift */,
+			);
+			path = CollectionModule;
+			sourceTree = "<group>";
+		};
+		00C5A88929FDAF2500907A91 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				00C5A88A29FDAF2B00907A91 /* Protocols */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		00C5A88A29FDAF2B00907A91 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				00C5A88B29FDAF3700907A91 /* Assemblying.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		00C5A8932A0181D100907A91 /* Workes */ = {
+			isa = PBXGroup;
+			children = (
+				00C5A8942A0181D800907A91 /* Lan */,
+			);
+			path = Workes;
+			sourceTree = "<group>";
+		};
+		00C5A8942A0181D800907A91 /* Lan */ = {
+			isa = PBXGroup;
+			children = (
+				00C5A8912A0176B400907A91 /* CollectionWorker.swift */,
+			);
+			path = Lan;
+			sourceTree = "<group>";
+		};
+		00C5A8952A0181EA00907A91 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				00C5A88D29FDDD9900907A91 /* DrugCollectionViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		00C5A8992A032C6A00907A91 /* DrugsInfo */ = {
+			isa = PBXGroup;
+			children = (
+				00C5A89A2A032C9700907A91 /* DrugsInfoViewController.swift */,
+			);
+			path = DrugsInfo;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -77,6 +162,9 @@
 			dependencies = (
 			);
 			name = Binet;
+			packageProductDependencies = (
+				00C5A8972A01CD8800907A91 /* Kingfisher */,
+			);
 			productName = Binet;
 			productReference = 00C5A86729FDA89100907A91 /* Binet.app */;
 			productType = "com.apple.product-type.application";
@@ -105,6 +193,9 @@
 				Base,
 			);
 			mainGroup = 00C5A85E29FDA89100907A91;
+			packageReferences = (
+				00C5A8962A01CD8800907A91 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			productRefGroup = 00C5A86829FDA89100907A91 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -131,8 +222,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				00C5A86F29FDA89100907A91 /* ViewController.swift in Sources */,
+				00C5A89B2A032C9700907A91 /* DrugsInfoViewController.swift in Sources */,
+				00C5A8902A00992700907A91 /* DrugEntity.swift in Sources */,
+				00C5A8922A0176B400907A91 /* CollectionWorker.swift in Sources */,
+				00C5A88E29FDDD9900907A91 /* DrugCollectionViewCell.swift in Sources */,
+				00C5A88229FDAEFA00907A91 /* CollectionInteractor.swift in Sources */,
+				00C5A86F29FDA89100907A91 /* ColectionViewController.swift in Sources */,
 				00C5A86B29FDA89100907A91 /* AppDelegate.swift in Sources */,
+				00C5A88429FDAF0900907A91 /* CollectionRouter.swift in Sources */,
+				00C5A88C29FDAF3700907A91 /* Assemblying.swift in Sources */,
+				00C5A88029FDAEEB00907A91 /* CollectionPresenter.swift in Sources */,
+				00C5A88829FDAF2200907A91 /* CollectionAssembly.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -340,6 +440,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		00C5A8962A01CD8800907A91 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		00C5A8972A01CD8800907A91 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 00C5A8962A01CD8800907A91 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 00C5A85F29FDA89100907A91 /* Project object */;
 }
