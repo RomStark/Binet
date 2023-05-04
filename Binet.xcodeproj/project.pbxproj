@@ -20,6 +20,7 @@
 		00C5A8902A00992700907A91 /* DrugEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C5A88F2A00992700907A91 /* DrugEntity.swift */; };
 		00C5A8922A0176B400907A91 /* CollectionWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C5A8912A0176B400907A91 /* CollectionWorker.swift */; };
 		00C5A8982A01CD8800907A91 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 00C5A8972A01CD8800907A91 /* Kingfisher */; };
+		00C5A89B2A032C9700907A91 /* DrugsInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C5A89A2A032C9700907A91 /* DrugsInfoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +38,7 @@
 		00C5A88D29FDDD9900907A91 /* DrugCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrugCollectionViewCell.swift; sourceTree = "<group>"; };
 		00C5A88F2A00992700907A91 /* DrugEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrugEntity.swift; sourceTree = "<group>"; };
 		00C5A8912A0176B400907A91 /* CollectionWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionWorker.swift; sourceTree = "<group>"; };
+		00C5A89A2A032C9700907A91 /* DrugsInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrugsInfoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +73,7 @@
 			isa = PBXGroup;
 			children = (
 				00C5A88929FDAF2500907A91 /* Common */,
+				00C5A8992A032C6A00907A91 /* DrugsInfo */,
 				00C5A87E29FDAEBE00907A91 /* CollectionModule */,
 				00C5A86A29FDA89100907A91 /* AppDelegate.swift */,
 				00C5A87329FDA89200907A91 /* Assets.xcassets */,
@@ -133,6 +136,14 @@
 				00C5A88D29FDDD9900907A91 /* DrugCollectionViewCell.swift */,
 			);
 			path = Cells;
+			sourceTree = "<group>";
+		};
+		00C5A8992A032C6A00907A91 /* DrugsInfo */ = {
+			isa = PBXGroup;
+			children = (
+				00C5A89A2A032C9700907A91 /* DrugsInfoViewController.swift */,
+			);
+			path = DrugsInfo;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -211,6 +222,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				00C5A89B2A032C9700907A91 /* DrugsInfoViewController.swift in Sources */,
 				00C5A8902A00992700907A91 /* DrugEntity.swift in Sources */,
 				00C5A8922A0176B400907A91 /* CollectionWorker.swift in Sources */,
 				00C5A88E29FDDD9900907A91 /* DrugCollectionViewCell.swift in Sources */,

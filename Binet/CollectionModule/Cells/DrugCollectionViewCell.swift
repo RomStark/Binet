@@ -45,6 +45,22 @@ final class DrugCollectionViewCell: UICollectionViewCell {
     
 }
 
+extension DrugCollectionViewCell {
+    func configureCell(drug: Drug) {
+        
+        self.titleLabel.text = drug.categories.name
+        self.descriptionLabel.text = drug.description
+        let urlString = "http://shans.d2.i-partner.ru" + drug.categories.image
+        if  let urlString = urlString.addingPercentEncoding(withAllowedCharacters: NSCharacterSet.urlQueryAllowed),
+           let url = URL(string: urlString) {
+            imageView.kf.setImage(with: url)
+        } else {
+
+            imageView.image = nil
+        }
+    }
+}
+
 private extension DrugCollectionViewCell {
     private func setupUI() {
         setupImageView()
@@ -92,17 +108,5 @@ private extension DrugCollectionViewCell {
         descriptionLabel.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -12.0).isActive = true
     }
     
-    public func configureCell(drug: Drug) {
-        
-        self.titleLabel.text = drug.categories.name
-        self.descriptionLabel.text = drug.description
-        let urlString = "http://shans.d2.i-partner.ru" + drug.categories.image
-        if  let urlString = urlString.addingPercentEncoding(withAllowedCharacters: NSCharacterSet.urlQueryAllowed),
-           let url = URL(string: urlString) {
-            imageView.kf.setImage(with: url)
-        } else {
-
-            imageView.image = nil
-        }
-    }
+    
 }

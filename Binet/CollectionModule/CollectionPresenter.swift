@@ -11,6 +11,7 @@ import Foundation
 //Протокол передачи UI эвентов слою презентации
 protocol CollectionPresentation {
     func getDrugs(offset: Int, completion: @escaping (Result<Drugs, Error>) -> Void)
+   
 }
 
 protocol CollectionPresentationMenagement: AnyObject {
@@ -33,6 +34,9 @@ final class CollectionPresenter {
 
 // MARK: CollectionPresentation
 extension CollectionPresenter: CollectionPresentation {
+    
+    
+    
     func getDrugs(offset: Int, completion: @escaping (Result<Drugs, Error>) -> Void) {
         print("presenter enter")
         interactor.getDrugs(offset: offset) { result in

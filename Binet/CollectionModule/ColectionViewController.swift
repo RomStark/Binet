@@ -121,6 +121,17 @@ extension CollectionViewController: UICollectionViewDataSource {
 }
 
 extension CollectionViewController: UICollectionViewDelegate {
+    
+    func collectionView(
+        _ collectionView: UICollectionView,
+        didSelectItemAt indexPath: IndexPath
+    ) {
+        let vc = DrugsInfoViewController()
+        vc.configure(drug: self.drugsList[indexPath.row])
+        navigationController?.pushViewController(vc, animated: true)
+    }
+    
+    
     func collectionView(_: UICollectionView, willDisplay: UICollectionViewCell, forItemAt: IndexPath) {
         if forItemAt.row == drugsList.endIndex - 1 {
             if drugsList.endIndex % 10 == 0 {
